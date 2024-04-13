@@ -1,0 +1,25 @@
+class Student
+{
+	//properties/fields/attributes
+	String name;
+	int age;
+
+	//methods/behaviours
+	public void dispStdDetails()
+	{
+		System.out.println(name);
+		System.out.println(age);
+	}
+
+}
+
+class  OOPS_Part3
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("OOPS Part3");
+		
+
+
+	}
+}

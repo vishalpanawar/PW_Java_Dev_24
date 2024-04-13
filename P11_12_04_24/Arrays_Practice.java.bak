@@ -1,0 +1,34 @@
+class Arrays_Practice
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Arrays_Practice\n");
+
+		int [] a = {10, 20, 40 };
+
+		int[][] b = {
+			{10,20,30}, {22, 11}};
+
+		for (int i = 0; i<b.length ; i++)
+		{
+			for(int j=0; j < b[i].length ; j++)
+			{
+				System.out.print(b[i][j] + "\t");
+			}
+			System.out.println();
+		}
+
+		int[][] a1 = new int[3][2];
+
+		//a1[0] = new int[3]; --> Here we are reassigning the dimension of Arrays... So now, it became Jagged Array...
+		//a1[1] = new int[2]; 
+
+		System.out.println(a1[1].length);
+
+		int[][] a = new int[3][2];
+		a[0] = new int[4];
+		a[1] = new int[3];
+
+		a = new int[4][3];
+	}
+}

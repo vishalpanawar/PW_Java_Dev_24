@@ -1,0 +1,10 @@
+class Test
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+		System.out.println("Max value of INT" + Integer.MAX_VALUE);
+		System.out.println("Max value of INT" + Short.MAX_VALUE);
+		System.out.println("Max value of INT" + Byte.MAX_VALUE);
+	}
+}

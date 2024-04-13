@@ -1,0 +1,40 @@
+class Arrays_Part2
+
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Lec 28th Oct Part 1 : 1-D Arrays, 2-Arrays, Jagged Arrays, Usage of Foreach and for loops, Keypoints about OOPS...");
+
+		// Main points:
+		/*
+			1. Arrays in Java are treated as Objects.
+			2. In Java memory for Objects is given in "HeapArea".
+			3. If memory is given in "HeapArea", JVM will give default value for variables based on the datatypes. 
+				* int, byte, short, long --> zero ( 0).
+				* float, double --> 0.0
+				* char --> nothing
+				* boolean --> false
+
+			4. If memory is given in "StackArea", programmer should initialize the value before using the variable, otherwise it would result in "CompileTimeError"
+			5. While working with Arrays, below are the steps we need to follow:
+				* Array Declaration		--> int [] a;
+				* Array Construction	--> a = new int[23];
+				* Array Initialisation	--> a[20] = 243;
+
+			6. Any problem occured at runtime we categoriesd into 2 types:
+				a. Exception => Problem occured and it can be handled.
+				b. Error	 => Problem occured, but it can't be handled.
+
+			*/
+
+			// As we know that Arrays in Java are treated as Objects, then we need not to give new keyword below to construct an Arrays.
+			// Below we are doing all three steps at once: Declaration, Construction, Initialization.
+			int[] a = {10, 20, 40} ;
+			System.out.println("Arrays is " + a);
+
+			for( int i =0; i<3 ; i++ )
+				System.out.println(a[i]);
+			
+		
+	}
+}

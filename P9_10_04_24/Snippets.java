@@ -1,0 +1,23 @@
+class Snippets
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Arryas OOPS Lecture Snippets:!");
+		
+		Long x = 42L;
+		Long y = 44L;
+		System.out.print(" " + 7 + 2 + " " );
+
+		System.out.print(foo() + x + 5 + " " );
+		System.out.print(x + y + foo()  );		
+
+		int a = 8, b = 15, c=4;
+
+		System.out.println("\n"+ " "+ ( 2 * ( ( a%5) * (4 + (b-3)/(c+2) ) ) ));
+	}
+
+	static String foo(){
+		return "foo";
+	}
+
+}
