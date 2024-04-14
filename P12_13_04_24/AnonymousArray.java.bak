@@ -1,0 +1,25 @@
+class AnonymousArray 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("AnonymousArray");
+
+		System.out.println("The sum of each array of 2D arrays is: " + sum( new int[][] {{1,2,3,4} , {12, 12}, {12,3,4}}));
+
+	}
+
+	static int sum(int[][] arr)
+	{
+		int total = 0;
+
+		for (int[] arrData:arr )
+		{
+			for( int data : arrData)
+			{
+				total += data;
+			}
+
+		}
+		return total;
+	}
+}

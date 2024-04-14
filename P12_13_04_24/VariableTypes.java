@@ -1,0 +1,41 @@
+class VariableTypes 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("VariableTypes!");
+
+		/*
+
+		How many types of variable are there in Java Language:
+			There are 2 types of variable:
+			a. Based on the type of value variable holds
+			b. Based on the behavioud and position of its declaration
+
+		Based on the types of value variable holds:
+			1. Primitive Type
+			2. Reference Type
+
+			1. Primitive types:
+				These are the variables which holds primitve values, they don't have any properties or methods like length() etc...
+				eg.: int x =10; boolean isMarried = false; double avg = 12.4;
+
+			2. Reference Types:
+				These are the variables which holds the address of the objects, or these variable are used to refer the objects
+					eg: Student std = new Student();
+						Employee emp = new Employee();
+						int[] arr = {1, 2, 4};
+
+
+		Based on the behaviour and position of its declaration:
+			1. Instance Variable					
+			2. Static Variable
+			3. Local Variable 
+		
+			1. Instance Variable: 
+				These are the variable which are written inside the class, but outside the methods.
+
+		*/
+
+
+	}
+}

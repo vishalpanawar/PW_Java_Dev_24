@@ -1,0 +1,26 @@
+class AddingUsingCMDLineArgs
+{
+	public static void main(String[] args) // AddingUsingCMDLineArgs.main( new String[] {"X", "Y"}) 
+	{
+		System.out.println("Adding using Command Line Arguments");
+
+
+		int total = 0;
+		// int args[0] = 
+		for (String data: args )
+		{
+			total += Integer.parseInt(data);
+		}
+		System.out.println("Sum is : " + total );
+
+		// Ex 2: 
+
+		String[] argh = {"Arnab", "Bhuvi" , "Classen", "Dhoni"} ;
+		args = argh;
+		System.out.println(args.length);
+		System.out.println(args[2].length());
+		for(String data : args)
+			System.out.println(data);
+
+	}
+}

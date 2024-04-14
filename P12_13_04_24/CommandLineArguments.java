@@ -1,0 +1,44 @@
+class CommandLineArguments 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello to Command Line Arguments World!");
+		
+		System.out.println("Arg passed is : " + args + " and Length of Argument passed as Command Line Argument is : " + args.length);
+
+
+		// Here we are working on Command Line Arguments... So, we will be using arguments when will execute Our Program using java Programe....
+		// java CommandLineArguments 10 20
+		Integer total  = 0;
+		int num = 0;
+		for ( String data : args)
+		{
+			System.out.println("Command line argument passed is :: " + data ); 
+			//num = Integer.parseInt(data);
+			//total += num;
+			//System.out.println("Sum of all command line arguments is :: " + total);
+		}	
+		
+		//System.out.println("Sum of all command line arguments is :: " + total);
+
+		// CommandLineArguments;
+		/*
+			1. These are the arguments passed in the command line from the programmer to the main()
+			2. Any type of arguments can be passed from the command line like int, float, char, double, String...
+			3. JVM will collect the arguments passed by the programmer and creates an Anonymous Array of type String.
+			4. JVM will call main() by passing Ananymous array as the argument.
+			5. Signature of main():
+				a. public -> JVM should access the main() without any authorization and authentication so make it as public.
+				b. static -> JVM should not create an object of the class which contains main(), it should directly call the main, so mark main() as static
+				c. void -> JVM will not return anything to OS so we need to mark the return type as void.
+				d. main( String[] args) -> String[] args :: It refers to command line arguments which the JVM will use to store the arguments sent by the user.
+
+			e.g. java Test sachin virat Dinesh:
+				   java Test sachin virat Dinesh
+
+				   Test.main(new String[] {"Sachin" , "names", "Virat", "true"});
+				
+		*/
+	}
+
+}

@@ -1,0 +1,47 @@
+class Student
+{
+	static String nationality = "Indian";
+	String School = "ABC";
+	String name ;
+	int age;
+	String gender;
+
+	void dispStudDetail(){
+	System.out.println("Name of student: " + name);
+	System.out.println("Age of student: " + age);
+	System.out.println("Gender of student: " + gender);
+	System.out.println("Nationality of student: " + nationality);
+
+	}
+}
+
+class StaticVariable 
+{	
+	static int i2 = 10;	
+	int i3 = 1221;
+
+	public static void main(String[] args) 
+	{
+		System.out.println("Static Variable example");
+
+		Student s1 = new Student();
+		s1.name = "Mohan";
+		s1.age = 32;
+		s1.gender = "Male";
+		s1.dispStudDetail();
+
+		Student s2 = new Student();
+		s2.name = "Rohani";
+		s2.age = 22;
+		s2.gender = "Female";
+		s2.dispStudDetail();
+
+		System.out.println("Value of static i2 is: " + i2);
+		System.out.println("Value of static i2 using Test Object: " + new StaticVariable().i2);
+		System.out.println("Value of static i2 Using Class Name: " + StaticVariable.i2);
+		System.out.println("Value of instance i3 is: " + new StaticVariable().i3);
+		System.out.println("School Name from Student instance is: " +  s1.School);
+
+		 
+	}
+}
